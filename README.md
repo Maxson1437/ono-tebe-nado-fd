@@ -1,1 +1,1 @@
-git@github.com:Maxson1437/ono-tebe-nado-fd.git
+https://github.com/Maxson1437/ono-tebe-nado-fd
