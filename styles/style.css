@@ -1,1 +1,346 @@
-/* место для вашего кода */
+/*Переопределить всем элементам box-sizing
+Задать всему тексту интерлиньяж (расстояние между строками)
+*/
+
+.html {
+scroll-behavior: smooth;
+}
+
+.header { /* Общий класс шапки*/
+padding: 92px 50px 96px 50px;
+margin: 0;
+display: grid;
+grid-template-columns: 1fr min-content 1fr;
+align-items:center
+}
+
+.header__links-list {/*Список ссылок*/
+display: flex;
+flex-direction: row;
+gap: 32px;
+font-family: "Raleway", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+}
+
+.header__links-list-item {/*Каждый пунтк в списке*/
+list-style: circle;
+}
+
+.header__links-list-item:hover {/*Каждый пунтк в списке*/
+text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {/*Ссылка без кружочка*/
+list-style: none;
+}
+
+.header__link:hover {/*Выбранная ссылка меню (без подчеркивания)*/
+text-decoration: none;
+}
+
+.header__link_no-underline {/*Класс убирает подчеркивание у пункта меню главная*/
+    text-decoration: none;
+}
+
+.header__logo {/*Контейнер логотипа*/
+display: block;
+width: 148px;
+height: 105px;
+}
+
+.header__logo-image {/*Картинка с логотипом*/
+background-image: url('../images/logo-black.svg');
+background-repeat: no-repeat;
+}
+
+.address {/*Общий класс для блока с адрессом*/
+font-family: "Raleway", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+max-width: 240px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-self: end;
+}
+
+.header__address-line {/*Класс для выравнивания подчеркивания в адресе*/
+text-decoration: none;
+border-bottom: 1px solid black;
+}
+
+.cover {/*Класс всей секции*/
+min-height: 757px;
+margin-bottom: 180px;
+background-image: url('../images/cover.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.overlay {/*Полупрозрачный блок поверх секции*/
+position:absolute;
+inset: 0;
+max-width: 100%;
+max-height: 100%;
+background-color:rgba(0, 0, 0, 0.5);
+}
+
+.cover__title {/*Заголовок секции*/
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 100px;
+color: white;
+text-transform: uppercase;
+letter-spacing: 25px;
+margin: 165px 50px 0px 50px;
+z-index: 2;
+}
+
+.aligned-text {/*Превращение срок заголовка в блочный элемент*/
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.aligned-text_left {/*Выравнивание первого слова слева*/
+text-align: left;
+}
+
+.aligned-text_center {/*Выравнивание второго слова по центру*/
+text-align: center;
+}
+
+.aligned-text_right {/*Выравнивание третьего слова справа*/
+text-align: right;
+}
+
+.letter-spacing-extended {/*Класс для управления межбуквненным расстоянием*/
+word-spacing: 20px;
+}
+
+.cover__description {/*Контейнер для подзаголовка и кнопки*/
+display: flex;
+margin: 106px 0 50px 0;
+justify-content: space-around;
+align-items: center;
+}
+
+.cover__description-text {/*Текст подзаголовка*/
+line-height: 28px;
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-size: 22px;
+letter-spacing: normal;
+text-transform: uppercase;
+color: white;
+}
+
+.bet-button {/*Кнопка сделать ставку*/
+background-color: transparent;
+border-width: 1px;
+font-family: "Raleway", sans-serif;
+border-color: white;
+font-size: 22px;
+font-weight: 500;
+padding: 12px 32px 11px 31px;
+color: white;
+text-transform: uppercase;
+}
+
+.lots {/*Вся секция*/
+margin: 0 24px 120px 24px;
+padding: 0;
+}
+
+.lots__heading {/* Заголовок секции*/
+font-family: "Raleway", sans-serif;
+font-weight: bold;
+font-size: 40px;
+line-height: 100%;
+text-transform: uppercase;
+letter-spacing: normal;
+margin-bottom: 27px;
+margin-left: 40px;
+}
+
+.lots__card-list {/*Список карточек*/
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 25px;
+list-style-type: none;
+position: relative;
+margin-bottom: 30px;
+}
+
+.lots__card-list-item {/*Пункт списка карточек*/
+width: 334px;
+min-height: 596px;
+position: relative;
+}
+
+.card-link {/*Ссылка, обрамляющая карточку*/
+height: 100%;
+text-decoration: none;
+position: relative;
+}
+
+.card {/*Карточка*/
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+padding: 48px 40px;
+}
+
+.card_type_film {/*Фон первой карточки*/
+background-image: url('../images/card-lot-01.jpg');
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+.card_type_book {/*Фон второй карточки*/
+background-image: url('../images/card-lot-02.jpg');
+background-size: cover;
+background-position: center;
+}
+
+.card_type_picture {/*Фон третьей карточки*/
+background-image: url('../images/card-lot-03.jpg');
+background-size: cover;
+background-position: center;
+}
+
+.card__title {/*Заголовок карточки*/
+font-family: "Raleway", sans-serif;
+font-size: 22px;
+font-weight: bold;
+line-height: 120%;
+text-transform: uppercase;
+text-decoration: underline;
+color: white;
+z-index: 10;
+}
+
+.card__text {/*Текст карточки*/
+font-family: "Raleway",sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+color: white;
+z-index: 10;
+}
+
+.lots__look-more-link {/*Ссылка посмотреть больше*/
+font-family: "Raleway", sans-serif;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0;
+font-weight: 400;
+margin-left: 40px;
+}
+
+.about {/*Вся секция*/
+margin: 120px 24px 180px 24px;
+padding: 0;
+display: grid;
+grid-template-columns: 334px auto;
+}
+
+
+.about__logo {/*Контейнер с логотипом*/
+background-color: black;
+border-radius: 50%;
+width: 240px;
+height: 240px;
+display: flex;
+justify-self: center;
+justify-content: center;
+align-items: center;
+margin-top: 35px;
+}
+
+.about__logo-image {/*Изображение логотипа*/
+width: 148px;
+height: 114px;
+}
+.about_description {/*Отступ для блока об авторе*/
+margin-left: 25px;
+}
+
+.about__title {/*Заголовок секции*/
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+font-size: 40px;
+line-height: 100%;
+text-transform: uppercase;
+margin-top: 136px;
+margin-bottom: 100px;
+}
+
+.about_paragraph {/*Перевод параграфов в колонку*/
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
+
+.about__text {/*Блок для текста (параграфов)*/
+font-family: "Raleway", sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+.footer {/*Подвал сайта*/
+padding: 0 50px 82px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_address {
+font-family: "Raleway", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+max-width: 264px;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-items: start;
+align-items: start;
+line-height: 24px;
+}
+
+.footer__address-line {/*Выравнивание линии адреса в футере*/
+text-decoration: none;
+border-bottom: 1px solid black;
+}
+
+.footer__menu-list {/*Список пунктов меню*/
+list-style-type: none;
+align-items: center;
+justify-items: center;
+}
+
+.footer__menu-link:hover {/*Выбранная ссылка меню (без подчеркивания)*/
+text-decoration: none;
+}
+
+.footer__social-list {/*Список ссылок на социальные сети*/
+list-style-type: none;
+display: flex;
+flex-direction: row;
+gap: 48px;
+justify-content: end;
+}
+
+.footer__social-icon {/*Иконка социальной сети*/
+max-width: 48px;
+max-height: 48px;
+}
