@@ -43,14 +43,15 @@ text-decoration: none;
 
 .header__logo {/*Контейнер логотипа*/
 display: block;
-width: 145px;
+width: 148px;
 height: 105px;
 box-sizing: border-box;
 align-content: center;
 }
 
 .header__logo-image {/*Картинка с логотипом*/
-background-repeat: no-repeat;
+width: 100%;
+height: 100%;
 box-sizing: border-box;
 align-self: center;
 justify-self: center;
