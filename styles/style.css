@@ -1,5 +1,4 @@
-/*Переопределить всем элементам box-sizing
-Задать всему тексту интерлиньяж (расстояние между строками)
+/*Задать всему тексту интерлиньяж (расстояние между строками)
 */
 
 .html {
@@ -22,6 +21,7 @@ font-family: "Raleway", sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
+box-sizing: border-box;
 }
 
 .header__links-list-item {/*Каждый пунтк в списке*/
@@ -41,17 +41,17 @@ text-decoration: none;
 }
 
 .header__link_no-underline {/*Класс убирает подчеркивание у пункта меню главная*/
-    text-decoration: none;
+text-decoration: none;
 }
 
 .header__logo {/*Контейнер логотипа*/
 display: block;
 width: 148px;
 height: 105px;
+box-sizing: border-box;
 }
 
 .header__logo-image {/*Картинка с логотипом*/
-background-image: url('../images/logo-black.svg');
 background-repeat: no-repeat;
 }
 
@@ -65,6 +65,8 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-self: end;
+box-sizing: border-box;
+line-height: 24px;
 }
 
 .header__address-line {/*Класс для выравнивания подчеркивания в адресе*/
@@ -79,6 +81,7 @@ background-image: url('../images/cover.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 position: relative;
+box-sizing: border-box;
 }
 
 .overlay {/*Полупрозрачный блок поверх секции*/
@@ -149,11 +152,13 @@ font-weight: 500;
 padding: 12px 32px 11px 31px;
 color: white;
 text-transform: uppercase;
+box-sizing: border-box;
 }
 
 .lots {/*Вся секция*/
 margin: 0 24px 120px 24px;
 padding: 0;
+box-sizing: border-box;
 }
 
 .lots__heading {/* Заголовок секции*/
@@ -196,6 +201,7 @@ flex-direction: column;
 justify-content: space-between;
 position: relative;
 padding: 48px 40px;
+box-sizing: border-box;
 }
 
 .card_type_film {/*Фон первой карточки*/
@@ -225,6 +231,7 @@ line-height: 120%;
 text-transform: uppercase;
 text-decoration: underline;
 color: white;
+line-height: 120%;
 z-index: 10;
 }
 
@@ -234,6 +241,7 @@ font-weight: 400;
 font-size: 20px;
 line-height: 120%;
 color: white;
+line-height: 120%;
 z-index: 10;
 }
 
@@ -251,6 +259,7 @@ margin: 120px 24px 180px 24px;
 padding: 0;
 display: grid;
 grid-template-columns: 334px auto;
+box-sizing: border-box;
 }
 
 
@@ -264,6 +273,7 @@ justify-self: center;
 justify-content: center;
 align-items: center;
 margin-top: 35px;
+box-sizing: border-box;
 }
 
 .about__logo-image {/*Изображение логотипа*/
@@ -272,6 +282,7 @@ height: 114px;
 }
 .about_description {/*Отступ для блока об авторе*/
 margin-left: 25px;
+box-sizing: border-box;
 }
 
 .about__title {/*Заголовок секции*/
@@ -301,6 +312,7 @@ line-height: 24px;
 padding: 0 50px 82px;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
+box-sizing: border-box;
 }
 
 .footer_address {
@@ -313,8 +325,8 @@ display: flex;
 flex-direction: column;
 align-items: start;
 justify-items: start;
-align-items: start;
 line-height: 24px;
+box-sizing: border-box;
 }
 
 .footer__address-line {/*Выравнивание линии адреса в футере*/
@@ -343,4 +355,5 @@ justify-content: end;
 .footer__social-icon {/*Иконка социальной сети*/
 max-width: 48px;
 max-height: 48px;
+box-sizing: border-box;
 }
