@@ -65,7 +65,7 @@ font-size: 18px;
 max-width: 240px;
 display: flex;
 flex-direction: column;
-line-height: 140%;
+line-height: 24px;
 box-sizing: border-box;
 }
 
